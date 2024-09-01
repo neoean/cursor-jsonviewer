@@ -1,0 +1,176 @@
+/* 定义默认样式和主题 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+.json-viewer {
+  /* JSON 查看器样式 */
+}
+
+.collapsible {
+  /* 可折叠节点样式 */
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.collapsible::before {
+  content: '▼';
+  display: inline-block;
+  transition: transform 0.3s;
+  font-size: 10px;
+  width: 12px;
+}
+
+.collapsible.collapsed::before {
+  transform: rotate(-90deg);
+}
+
+.header {
+  /* 头部样式 */
+}
+
+.json-viewer-header {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.json-container {
+  display: flex;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+.line-numbers {
+  padding: 10px 10px 10px 0;
+  border-right: 1px solid #ddd;
+  text-align: right;
+  color: #999;
+  user-select: none;
+}
+
+.line-numbers span {
+  display: block;
+  padding-right: 5px;
+}
+
+.json-tree {
+  margin: 0;
+  padding: 10px 0 10px 10px;
+  list-style-type: none;
+}
+
+.json-tree ul {
+  padding-left: 16px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.json-tree li {
+  position: relative;
+  padding-left: 16px;
+}
+
+/* 添加颜色样式 */
+.json-tree .json-key { color: #8B4513; }
+.json-tree .json-string { color: #008000; }
+.json-tree .json-number { color: #0000FF; }
+.json-tree .json-boolean { color: #FF00FF; }
+.json-tree .json-null { color: #808080; }
+
+pre {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* 添加更多样式以确保界面美观 */
+
+.json-viewer-container {
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.json-viewer-container .line-numbers {
+  padding: 10px 10px 10px 0;
+  border-right: 1px solid #ddd;
+  text-align: right;
+  color: #999;
+  user-select: none;
+}
+
+.json-viewer-container .line-numbers span {
+  display: block;
+  padding-right: 5px;
+}
+
+.json-viewer-container .json-tree {
+  margin: 0;
+  padding: 10px 0 10px 10px;
+  list-style-type: none;
+}
+
+.json-viewer-container .json-tree ul {
+  padding-left: 16px;
+  margin: 0;
+  list-style-type: none;
+}
+
+.json-viewer-container .json-tree li {
+  position: relative;
+  padding-left: 16px;
+}
+
+.json-viewer-container .collapsible {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.json-viewer-container .collapsible::before {
+  content: '▼';
+  display: inline-block;
+  transition: transform 0.3s;
+  font-size: 10px;
+  width: 12px;
+}
+
+.json-viewer-container .collapsible.collapsed::before {
+  transform: rotate(-90deg);
+}
+
+/* 添加颜色样式 */
+.json-viewer-container .json-key { color: #8B4513; } /* 默认棕色 */
+.json-viewer-container .json-string { color: #008000; } /* 默认绿色 */
+.json-viewer-container .json-number { color: #008000; } /* 默认绿色 */
+.json-viewer-container .json-boolean { color: #008000; } /* 默认绿色 */
+.json-viewer-container .json-null { color: #008000; } /* 默认绿色 */
+
+/* ... 其他样式保持不变 ... */
